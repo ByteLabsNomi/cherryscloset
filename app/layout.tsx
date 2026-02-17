@@ -32,6 +32,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#991C1A" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+      </head>
       <body className={`${inter.variable} antialiased flex flex-col min-h-screen`}>
         <AnnouncementBar />
         <Navbar />

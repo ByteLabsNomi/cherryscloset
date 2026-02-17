@@ -1,0 +1,17 @@
+{
+  "name": "Cherry's Closet",
+  "short_name": "Cherry's Closet",
+  "description": "Curated vintage designer clothing popup shop in Los Angeles",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDF8E2",
+  "theme_color": "#991C1A",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
