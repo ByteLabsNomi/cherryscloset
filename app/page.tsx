@@ -8,17 +8,17 @@ export default function Home() {
       <Image
         src="/logo.png"
         alt={siteConfig.name}
-        width={280}
-        height={280}
-        className="mb-8"
+        width={600}
+        height={600}
+        className="mb-8 w-[65vw] sm:w-[45vw] max-w-[600px]"
         priority
       />
-      <p className="text-xs sm:text-sm tracking-[0.3em] text-light-gray mb-14 sm:mb-10 text-center uppercase">
+      <p className="text-sm sm:text-base md:text-lg tracking-[0.3em] text-light-gray mb-14 sm:mb-10 text-center uppercase">
         CURATED VINTAGE
       </p>
       <Link
         href="/events"
-        className="border border-near-black text-near-black text-xs tracking-[0.2em] uppercase px-8 py-3 hover:bg-near-black hover:text-cream transition-colors"
+        className="border border-near-black text-near-black text-sm sm:text-base tracking-[0.2em] uppercase px-10 py-4 hover:bg-near-black hover:text-cream transition-colors"
       >
         SEE UPCOMING EVENTS
       </Link>
