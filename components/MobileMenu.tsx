@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/data/config";
 import InstagramIcon from "./InstagramIcon";
+import TikTokIcon from "./TikTokIcon";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,11 +89,8 @@ export default function MobileMenu() {
               {item.label}
             </Link>
           ))}
-          <a
-            href={siteConfig.social.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`mt-4 text-near-black hover:text-cherry-red transition-all duration-300 ${
+          <div
+            className={`mt-4 flex items-center gap-5 transition-all duration-300 ${
               isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
             style={{
@@ -100,10 +98,26 @@ export default function MobileMenu() {
                 ? `${siteConfig.nav.length * 75}ms`
                 : "0ms",
             }}
-            aria-label="Instagram"
           >
-            <InstagramIcon className="w-6 h-6" />
-          </a>
+            <a
+              href={siteConfig.social.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-near-black hover:text-cherry-red transition-colors"
+              aria-label="Instagram"
+            >
+              <InstagramIcon className="w-6 h-6" />
+            </a>
+            <a
+              href={siteConfig.social.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-near-black hover:text-cherry-red transition-colors"
+              aria-label="TikTok"
+            >
+              <TikTokIcon className="w-6 h-6" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

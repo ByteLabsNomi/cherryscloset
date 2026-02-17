@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/data/config";
 import ContactForm from "@/components/ContactForm";
 import InstagramIcon from "@/components/InstagramIcon";
+import TikTokIcon from "@/components/TikTokIcon";
 
 export const metadata: Metadata = {
   title: "CONTACT",
@@ -55,16 +56,29 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div>
+          <div className="flex items-center gap-5">
             <a
               href={siteConfig.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-near-black hover:text-cherry-red transition-colors"
+              aria-label="Instagram"
             >
               <InstagramIcon className="w-5 h-5" />
               <span className="text-xs tracking-[0.15em] uppercase">
-                FOLLOW US ON INSTAGRAM
+                INSTAGRAM
+              </span>
+            </a>
+            <a
+              href={siteConfig.social.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-near-black hover:text-cherry-red transition-colors"
+              aria-label="TikTok"
+            >
+              <TikTokIcon className="w-5 h-5" />
+              <span className="text-xs tracking-[0.15em] uppercase">
+                TIKTOK
               </span>
             </a>
           </div>

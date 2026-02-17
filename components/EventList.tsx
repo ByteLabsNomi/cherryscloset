@@ -78,12 +78,21 @@ export default function EventList() {
             <p className="text-sm tracking-[0.15em] text-light-gray mt-2 uppercase">
               FOLLOW US ON{" "}
               <a
-                href="https://instagram.com/cherryscloset"
+                href="https://www.instagram.com/cherrysclosetla"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-cherry-red hover:text-cherry-red-hover transition-colors"
               >
                 INSTAGRAM
+              </a>
+              {" & "}
+              <a
+                href="https://www.tiktok.com/@cherrysclosetla"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cherry-red hover:text-cherry-red-hover transition-colors"
+              >
+                TIKTOK
               </a>
               .
             </p>

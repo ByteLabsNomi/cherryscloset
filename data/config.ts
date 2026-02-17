@@ -11,7 +11,8 @@ export const siteConfig = {
     press: "press@cherryscloset.com",
   },
   social: {
-    instagram: "https://instagram.com/cherryscloset",
+    instagram: "https://www.instagram.com/cherrysclosetla",
+    tiktok: "https://www.tiktok.com/@cherrysclosetla",
   },
   nav: [
     { label: "HOME", href: "/" },

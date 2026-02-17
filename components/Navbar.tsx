@@ -2,6 +2,7 @@ import { siteConfig } from "@/data/config";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
 import InstagramIcon from "./InstagramIcon";
+import TikTokIcon from "./TikTokIcon";
 
 export default function Navbar() {
   return (
@@ -12,16 +13,27 @@ export default function Navbar() {
           <NavLinks />
         </div>
 
-        {/* Instagram pinned right */}
-        <a
-          href={siteConfig.social.instagram}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-near-black hover:text-cherry-red transition-colors ml-8"
-          aria-label="Instagram"
-        >
-          <InstagramIcon />
-        </a>
+        {/* Social icons pinned right */}
+        <div className="flex items-center gap-4 ml-8">
+          <a
+            href={siteConfig.social.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-near-black hover:text-cherry-red transition-colors"
+            aria-label="Instagram"
+          >
+            <InstagramIcon />
+          </a>
+          <a
+            href={siteConfig.social.tiktok}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-near-black hover:text-cherry-red transition-colors"
+            aria-label="TikTok"
+          >
+            <TikTokIcon />
+          </a>
+        </div>
       </div>
 
       {/* Mobile */}

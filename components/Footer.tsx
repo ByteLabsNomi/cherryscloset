@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/data/config";
 import InstagramIcon from "./InstagramIcon";
+import TikTokIcon from "./TikTokIcon";
 import NewsletterSignup from "./NewsletterSignup";
 
 export default function Footer() {
@@ -38,6 +39,15 @@ export default function Footer() {
               aria-label="Instagram"
             >
               <InstagramIcon className="w-4 h-4" />
+            </a>
+            <a
+              href={siteConfig.social.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-light-gray hover:text-cherry-red transition-colors"
+              aria-label="TikTok"
+            >
+              <TikTokIcon className="w-4 h-4" />
             </a>
           </div>
           <p className="text-xs tracking-[0.1em] text-light-gray">
